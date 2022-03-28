@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    {% load static %}
+    <script src="{% static '/js/script.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Search for your favorite movies!</h1>
+    </header>
+    <div class="search-wrapper">
+      <input
+        id="search-field"
+        class="search-field"
+        type="text"
+        name="movie_name"
+        placeholder="Search for a movie....."
+      />
+      <button id="submit-btn" class="submit-btn" type="submit">
+        Find Movie
+      </button>
+    </div>
+    <main class="wrapper">
+      <section id="movies" class="movies">
+        <h2>Movie results:</h2>
+        <!-- Cards wrapper -->
+        <div class="cards"></div>
+      </section>
+      {% comment %}
+      <section class="nomination-wrapper">
+        <h2>Nomination list:</h2>
+        <!-- nomination lists -->
+        <div class="nominations"></div>
+      </section>
+
+      <section id="movieRate" class="movieRate-wrapper">
+        <h2>movieRate:</h2>
+        <!-- nomination lists -->
+        <div class="movieRate"></div>
+      </section>
+      {% endcomment %}
+    </main>
+    <footer></footer>
+    {% load static %}
+    <script src="{% static '/js/script.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  </body>
+</html>
