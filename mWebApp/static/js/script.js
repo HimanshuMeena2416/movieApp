@@ -48,23 +48,7 @@ document.querySelector("#submit-btn").addEventListener("click", () => {
                       xhr.open("POST", '');
                       xhr.setRequestHeader("Content-Type", "application/json");
                       xhr.send(jsonString)
-                      // $.ajax({
-                      //     url: '',
-                      //     data: {
-                      //       'title': title,
-                      //       'year': year,
-                      //       'rate': rating,
-                      //       'searchQuery': movie,
-                      //       'imdbID': imdbID,
-                      //         //'csrfmiddlewaretoken': csrf
-                      //         },
-                      //     type: 'post',
-                      //     cache: false,
-                      //     success: function (returned_values) {
-                      //       console.log('working');// do whatever you want after success!                
-                      //         },
-                      // });
-                      //console.log('Checkout this JSON! ', rating);
+                   
 
                   // Elements
                     let cards = document.querySelector(".cards")
