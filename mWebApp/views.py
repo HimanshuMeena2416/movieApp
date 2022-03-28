@@ -23,5 +23,4 @@ def index(request):
     return render(request, 'base.html')
 
 
-def simple_func(request):
-    return render(request, 'abc.html')
+
